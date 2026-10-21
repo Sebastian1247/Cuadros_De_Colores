@@ -323,6 +323,12 @@ Se consideró tener una clase aparte para la heurística, pero no hace falta: es
 
 La entrada y salida sí se separó en ConsolaCuadros, porque para las versiones intermedia y avanzada hay que pedir al usuario el tamaño del tablero y el número de colores, y validarlos. Así las demás clases no contienen ningún texto ni leen del teclado, igual que en un proyecto anterior de la materia (Blackjack, con ConsolaBlackjack).
 
+### Diagrama de clases
+
+![Diagrama de clases](docs/CuadrosDeColores.png)
+
+El archivo editable está en [docs/CuadrosDeColores.drawio](docs/CuadrosDeColores.drawio) y se abre con draw.io. Los miembros estáticos van subrayados. Las relaciones son de asociación (línea continua con flecha abierta), dependencia «create» o «use» (línea punteada), composición (rombo relleno, de GeneradorTablero a Buscador), agregación (rombo vacío, de Tablero a Ficha y a Salida) y realización (línea punteada con triángulo, de Nodo a Comparable).
+
 ### Atributos y métodos
 
 Los atributos y métodos de cada clase son los siguientes. En los constructores la columna de retorno queda vacía.
