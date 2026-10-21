@@ -327,7 +327,7 @@ La entrada y salida sí se separó en ConsolaCuadros, porque para las versiones 
 
 ![Diagrama de clases](docs/CuadrosDeColores.png)
 
-El archivo editable está en [docs/CuadrosDeColores.drawio](docs/CuadrosDeColores.drawio) y se abre con draw.io. Los miembros estáticos van subrayados. Las relaciones son de asociación (línea continua con flecha abierta), dependencia «create» o «use» (línea punteada), composición (rombo relleno, de GeneradorTablero a Buscador), agregación (rombo vacío, de Tablero a Ficha y a Salida) y realización (línea punteada con triángulo, de Nodo a Comparable).
+El archivo editable está en [docs/CuadrosDeColores.drawio](docs/CuadrosDeColores.drawio) y se abre con draw.io. Los miembros estáticos van subrayados. Las relaciones son de asociación (línea continua con flecha abierta), dependencia «create» o «use» (línea punteada), composición (rombo relleno, de GeneradorTablero a Buscador) y agregación (rombo vacío, de Tablero a Ficha y a Salida).
 
 ### Atributos y métodos
 
@@ -675,9 +675,34 @@ Los rangos que App le pasa a la consola son los del enunciado: en la versión in
 
 Utilería de lectura de teclado proporcionada en el curso (Lewis y Loftus), con métodos estáticos. Se incluye tal cual en el proyecto; ConsolaCuadros solo utiliza `readInt()`. Cuando lo que se escribe no es un número, `readInt()` regresa `Integer.MIN_VALUE`, que queda fuera de cualquier rango válido, así que `leerEnteroEnRango` vuelve a preguntar.
 
+| Atributo | Acceso | Tipo | Descripción |
+|---|---|---|---|
+| `printErrors` | private static | `boolean` | Indica si los errores de lectura se imprimen; empieza en `true` |
+| `errorCount` | private static | `int` | Número de errores de lectura; empieza en 0 |
+| `current_token` | private static | `String` | Parte de un token que quedó pendiente después de leer un carácter |
+| `reader` | private static | `StringTokenizer` | Divide en tokens la línea que se está leyendo |
+| `in` | private static | `BufferedReader` | Lector de la entrada estándar |
+
 | Método | Acceso | Retorno | Descripción |
 |---|---|---|---|
+| `getErrorCount()` | public static | `int` | Regresa el número de errores de lectura |
+| `resetErrorCount(int count)` | public static | `void` | Regresa el contador de errores a cero |
+| `getPrintErrors()` | public static | `boolean` | Indica si los errores se imprimen |
+| `setPrintErrors(boolean flag)` | public static | `void` | Cambia si los errores se imprimen |
+| `error(String str)` | private static | `void` | Suma un error y, si corresponde, imprime el mensaje |
+| `getNextToken()` | private static | `String` | Obtiene el siguiente token, aunque esté en otra línea |
+| `getNextToken(boolean skip)` | private static | `String` | Obtiene el siguiente token, o el que quedó pendiente |
+| `getNextInputToken(boolean skip)` | private static | `String` | Lee el siguiente token de la entrada; `skip` indica si salta delimitadores y líneas |
+| `endOfLine()` | public static | `boolean` | Indica si ya no hay tokens en la línea actual |
+| `readLine()` | public static | `String` | Lee una línea completa, descartando lo que quedaba en el buffer |
+| `readString()` | public static | `String` | Lee el resto de la línea como cadena |
+| `readWord()` | public static | `String` | Lee una palabra |
+| `readBoolean()` | public static | `boolean` | Lee `true` o `false` |
+| `readChar()` | public static | `char` | Lee un carácter |
 | `readInt()` | public static | `int` | Lee un entero de la entrada estándar; regresa `Integer.MIN_VALUE` si el dato no es un número |
+| `readLong()` | public static | `long` | Lee un entero largo |
+| `readFloat()` | public static | `float` | Lee un número de punto flotante |
+| `readDouble()` | public static | `double` | Lee un número de doble precisión |
 
 ### Estructuras de datos
 

@@ -59,13 +59,79 @@
           <mxGeometry height="26" width="618" y="346" as="geometry" />
         </mxCell>
         <mxCell id="keyboard" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Keyboard" vertex="1">
-          <mxGeometry height="60" width="200" x="1160" y="0" as="geometry" />
+          <mxGeometry height="632" width="300" x="2500" y="0" as="geometry" />
         </mxCell>
-        <mxCell id="keyboard-1" parent="keyboard" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="200" y="26" as="geometry" />
+        <mxCell id="keyboard-1" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- printErrors: boolean = true" vertex="1">
+          <mxGeometry height="26" width="300" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="keyboard-2" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ readInt(): int" vertex="1">
-          <mxGeometry height="26" width="200" y="34" as="geometry" />
+        <mxCell id="keyboard-2" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- errorCount: int = 0" vertex="1">
+          <mxGeometry height="26" width="300" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-3" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- current_token: String = null" vertex="1">
+          <mxGeometry height="26" width="300" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-4" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- reader: StringTokenizer" vertex="1">
+          <mxGeometry height="26" width="300" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-5" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- in: BufferedReader" vertex="1">
+          <mxGeometry height="26" width="300" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-6" parent="keyboard" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-7" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getErrorCount(): int" vertex="1">
+          <mxGeometry height="26" width="300" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-8" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ resetErrorCount(count: int): void" vertex="1">
+          <mxGeometry height="26" width="300" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-9" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getPrintErrors(): boolean" vertex="1">
+          <mxGeometry height="26" width="300" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-10" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ setPrintErrors(flag: boolean): void" vertex="1">
+          <mxGeometry height="26" width="300" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-11" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- error(str: String): void" vertex="1">
+          <mxGeometry height="26" width="300" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-12" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- getNextToken(): String" vertex="1">
+          <mxGeometry height="26" width="300" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-13" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- getNextToken(skip: boolean): String" vertex="1">
+          <mxGeometry height="26" width="300" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-14" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- getNextInputToken(skip: boolean): String" vertex="1">
+          <mxGeometry height="26" width="300" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-15" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ endOfLine(): boolean" vertex="1">
+          <mxGeometry height="26" width="300" y="372" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-16" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ readLine(): String" vertex="1">
+          <mxGeometry height="26" width="300" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-17" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ readString(): String" vertex="1">
+          <mxGeometry height="26" width="300" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-18" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ readWord(): String" vertex="1">
+          <mxGeometry height="26" width="300" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-19" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ readBoolean(): boolean" vertex="1">
+          <mxGeometry height="26" width="300" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-20" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ readChar(): char" vertex="1">
+          <mxGeometry height="26" width="300" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-21" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ readInt(): int" vertex="1">
+          <mxGeometry height="26" width="300" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-22" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ readLong(): long" vertex="1">
+          <mxGeometry height="26" width="300" y="554" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-23" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ readFloat(): float" vertex="1">
+          <mxGeometry height="26" width="300" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="keyboard-24" parent="keyboard" style="text;fontStyle=4;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ readDouble(): double" vertex="1">
+          <mxGeometry height="26" width="300" y="606" as="geometry" />
         </mxCell>
         <mxCell id="version" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;«enumeration»&lt;/span&gt;&lt;br&gt;Version" vertex="1">
           <mxGeometry height="212" width="240" x="0" y="520" as="geometry" />
@@ -246,15 +312,6 @@
         </mxCell>
         <mxCell id="nodo-14" parent="nodo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getMovimiento(): Movimiento" vertex="1">
           <mxGeometry height="26" width="569" y="346" as="geometry" />
-        </mxCell>
-        <mxCell id="comparable" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;«interface»&lt;/span&gt;&lt;br&gt;Comparable&amp;lt;T&amp;gt;" vertex="1">
-          <mxGeometry height="74" width="205" x="2500" y="520" as="geometry" />
-        </mxCell>
-        <mxCell id="comparable-1" parent="comparable" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="205" y="40" as="geometry" />
-        </mxCell>
-        <mxCell id="comparable-2" parent="comparable" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ compareTo(otro: T): int" vertex="1">
-          <mxGeometry height="26" width="205" y="48" as="geometry" />
         </mxCell>
         <mxCell id="tablero" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Tablero" vertex="1">
           <mxGeometry height="892" width="429" x="1100" y="1240" as="geometry" />
@@ -692,7 +749,7 @@
         <mxCell id="e-app-version" edge="1" parent="1" source="app" target="version" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;endSize=12;exitX=0.1717;exitY=1;exitDx=0;exitDy=0;entryX=0.4167;entryY=0;entryDx=0;entryDy=0;" value="«use»">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-consola-keyboard" edge="1" parent="1" source="consola" target="keyboard" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;endSize=12;exitX=1;exitY=0.0806;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="«use»">
+        <mxCell id="e-consola-keyboard" edge="1" parent="1" source="consola" target="keyboard" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;endSize=12;jumpStyle=arc;jumpSize=12;exitX=1;exitY=0.0806;exitDx=0;exitDy=0;entryX=0;entryY=0.0475;entryDx=0;entryDy=0;" value="«use»">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e-consola-tablero" edge="1" parent="1" source="consola" target="tablero" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;endSize=12;exitX=1;exitY=0.914;exitDx=0;exitDy=0;entryX=0.1166;entryY=0;entryDx=0;entryDy=0;" value="«use»">
@@ -742,9 +799,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e-buscador-tablero" edge="1" parent="1" source="buscador" target="tablero" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;endSize=12;exitX=0.2935;exitY=1;exitDx=0;exitDy=0;entryX=0.5828;entryY=0;entryDx=0;entryDy=0;" value="«use»">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e-nodo-comparable" edge="1" parent="1" source="nodo" target="comparable" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=0;endSize=16;exitX=1;exitY=0.0995;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="«bind» T → Nodo">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e-nodo-tablero" edge="1" parent="1" source="nodo" target="tablero" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=12;exitX=0.0703;exitY=1;exitDx=0;exitDy=0;entryX=0.8625;entryY=0;entryDx=0;entryDy=0;" value="guarda">
